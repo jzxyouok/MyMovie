@@ -1,0 +1,25 @@
+//
+//  BaseHeader.pch
+//  DyfTimeMovie
+//
+//  Created by mac on 15/8/21.
+//  Copyright (c) 2015年 mac. All rights reserved.
+//
+
+#ifndef DyfTimeMovie_BaseHeader_pch
+#define DyfTimeMovie_BaseHeader_pch
+
+//屏幕的宽高
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#import "UIImageView+WebCache.h"
+
+#import "UIViewExt.h"
+
+//读取JSON数据
+#import "MovieJSON.h"
+
+
+
+#endif

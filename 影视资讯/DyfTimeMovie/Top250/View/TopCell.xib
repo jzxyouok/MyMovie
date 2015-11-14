@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="TopCell" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="TopCell">
+            <rect key="frame" x="0.0" y="0.0" width="104" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="104" height="148"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AEN-t4-Iag">
+                        <rect key="frame" x="7" y="8" width="95" height="112"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZC-uB-NG9" customClass="StarView">
+                        <rect key="frame" x="5" y="126" width="70" height="12"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="qA7-dg-hax"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这个杀手不太冷" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiI-de-jMo">
+                        <rect key="frame" x="7" y="104" width="95" height="16"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPP-5A-P6f">
+                        <rect key="frame" x="75" y="127" width="27" height="12"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="CLs-w4-Xwu"/>
+                            <constraint firstAttribute="height" constant="12" id="YCg-tR-CUy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CLs-w4-Xwu"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AEN-t4-Iag" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="1YJ-eA-9hD"/>
+                <constraint firstItem="GZC-uB-NG9" firstAttribute="top" secondItem="OiI-de-jMo" secondAttribute="bottom" constant="6" id="4uc-Or-ayf"/>
+                <constraint firstItem="GZC-uB-NG9" firstAttribute="top" secondItem="OiI-de-jMo" secondAttribute="bottom" constant="6" id="Axv-qf-Mfn"/>
+                <constraint firstItem="GZC-uB-NG9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="126" id="BDX-HN-voo"/>
+                <constraint firstAttribute="trailing" secondItem="YPP-5A-P6f" secondAttribute="trailing" constant="2" id="BeB-Ge-uLu"/>
+                <constraint firstItem="AEN-t4-Iag" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7" id="CUb-3l-lgx"/>
+                <constraint firstItem="YPP-5A-P6f" firstAttribute="top" secondItem="OiI-de-jMo" secondAttribute="bottom" constant="7" id="M9K-8Q-rOP"/>
+                <constraint firstItem="AEN-t4-Iag" firstAttribute="bottom" secondItem="OiI-de-jMo" secondAttribute="bottom" id="MXK-5I-wxr"/>
+                <constraint firstAttribute="centerY" secondItem="YPP-5A-P6f" secondAttribute="centerY" id="NdH-JI-jBJ"/>
+                <constraint firstItem="GZC-uB-NG9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="ORz-Db-Snw"/>
+                <constraint firstItem="AEN-t4-Iag" firstAttribute="leading" secondItem="OiI-de-jMo" secondAttribute="leading" id="QnS-c9-A0o"/>
+                <constraint firstAttribute="bottom" secondItem="YPP-5A-P6f" secondAttribute="bottom" constant="9" id="SWe-mc-hyL"/>
+                <constraint firstItem="YPP-5A-P6f" firstAttribute="trailing" secondItem="AEN-t4-Iag" secondAttribute="trailing" id="Tqm-Hp-SKW"/>
+                <constraint firstItem="YPP-5A-P6f" firstAttribute="leading" secondItem="GZC-uB-NG9" secondAttribute="trailing" id="Uje-39-nKL"/>
+                <constraint firstItem="YPP-5A-P6f" firstAttribute="trailing" secondItem="OiI-de-jMo" secondAttribute="trailing" id="XZD-jP-N1n"/>
+                <constraint firstAttribute="bottom" secondItem="GZC-uB-NG9" secondAttribute="bottom" constant="10" id="iN0-dd-h7S"/>
+                <constraint firstAttribute="bottom" secondItem="YPP-5A-P6f" secondAttribute="bottom" constant="9" id="nX1-FU-Ds9"/>
+                <constraint firstItem="YPP-5A-P6f" firstAttribute="top" secondItem="OiI-de-jMo" secondAttribute="bottom" constant="7" id="pHZ-t9-v3e"/>
+                <constraint firstAttribute="bottom" secondItem="YPP-5A-P6f" secondAttribute="bottom" constant="9" id="rMS-Ji-HOV"/>
+                <constraint firstAttribute="centerY" secondItem="YPP-5A-P6f" secondAttribute="centerY" id="yrH-yd-GwQ"/>
+            </constraints>
+            <size key="customSize" width="294" height="307"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4uc-Or-ayf"/>
+                    <exclude reference="BDX-HN-voo"/>
+                    <exclude reference="NdH-JI-jBJ"/>
+                    <exclude reference="nX1-FU-Ds9"/>
+                    <exclude reference="pHZ-t9-v3e"/>
+                    <exclude reference="rMS-Ji-HOV"/>
+                    <exclude reference="yrH-yd-GwQ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="ratingLabel" destination="YPP-5A-P6f" id="0cl-UJ-qkL"/>
+                <outlet property="starView" destination="GZC-uB-NG9" id="Liq-wd-nr6"/>
+                <outlet property="titleLabel" destination="OiI-de-jMo" id="T4X-Ul-IML"/>
+                <outlet property="topImageView" destination="AEN-t4-Iag" id="PYv-Hw-Iyi"/>
+            </connections>
+            <point key="canvasLocation" x="51" y="40"/>
+        </collectionViewCell>
+    </objects>
+</document>
